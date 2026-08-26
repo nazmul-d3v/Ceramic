@@ -106,7 +106,7 @@ const PRODUCTS_DATA = [
 const SHOWROOMS_DATA = {
     dhaka: [
         {
-            name: "Akij Ceramics Experience Center - Banani",
+            name: "Heeds Ceramics Experience Center - Banani",
             address: "Simpletree Lighthouse, Plot 53, Road 21, Block-B, Kemal Ataturk Avenue, Banani, Dhaka 1213",
             phone: "+8809612677677",
             hours: "9:00 AM - 8:00 PM (Sat - Thu)",

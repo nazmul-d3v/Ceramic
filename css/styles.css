@@ -339,6 +339,25 @@ button, input, select, textarea {
     flex-shrink: 0;
 }
 
+.logo-img-wrapper {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    padding: 3px 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(212, 175, 55, 0.3);
+    border: 1px solid var(--border-gold);
+    flex-shrink: 0;
+}
+
+.brand-logo-img {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+}
+
 .brand-name {
     font-family: var(--font-heading);
     font-size: 1.45rem;

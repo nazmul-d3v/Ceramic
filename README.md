@@ -1,6 +1,6 @@
-# 🏆 Ceramics — Promise of Perfection
+# 🏆 Heeds Ceramics — Heeds Ceramics Industries Ltd.
 
-> **Bangladesh's #1 Premier Ceramic & Vitrified Tiles Brand Website**
+> **Bangladesh's Premier Ceramic & Vitrified Tiles Brand Website**
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ceramic-eight-tan.vercel.app/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -14,6 +14,14 @@
 
 Experience the live interactive application deployed on Vercel:  
 🔗 **[https://ceramic-eight-tan.vercel.app/](https://ceramic-eight-tan.vercel.app/)**
+
+---
+
+## 🏢 Brand Identity
+
+- **Brand Name**: **Heeds Ceramics**
+- **Company Name**: **Heeds Ceramics Industries Ltd. (হীডস সিরামিকস ইন্ডাস্ট্রিজ লিঃ)**
+- **Official Logo**: Custom logo badge integrated across header, mobile drawer menu, and footer.
 
 ---
 
@@ -43,15 +51,16 @@ Experience the live interactive application deployed on Vercel:
 
 ```text
 Ceramic/
-├── index.html        # Main single-page web application
+├── index.html          # Main single-page web application
 ├── css/
-│   └── styles.css    # Premium CSS design system & component styles
+│   └── styles.css      # Premium CSS design system & component styles
 ├── js/
-│   └── app.js        # Interactive application logic & datasets
+│   └── app.js          # Interactive application logic & datasets
 ├── images/
-│   ├── hero.jpg      # Hero section background asset
-│   └── tiles/        # High-resolution product & texture swatches
-└── README.md         # Project documentation
+│   ├── heeds_logo.png  # Official Heeds Ceramics brand logo
+│   ├── hero.jpg        # Hero section background asset
+│   └── tiles/          # High-resolution product & texture swatches
+└── README.md           # Project documentation
 ```
 
 ---
@@ -83,11 +92,11 @@ To run this project locally on your machine:
 
 ## 📤 Git Commit & Push Commands
 
-To commit the new `README.md` and push all changes to GitHub:
+To commit and push all changes to GitHub:
 
 ```bash
-git add README.md
-git commit -m "docs: add comprehensive README with live Vercel link and feature breakdown"
+git add .
+git commit -m "feat: rebrand to Heeds Ceramics Industries Ltd. with official logo"
 git push origin main
 ```
 
