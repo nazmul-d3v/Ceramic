@@ -106,9 +106,9 @@ const PRODUCTS_DATA = [
 const SHOWROOMS_DATA = {
     dhaka: [
         {
-            name: "Heeds Ceramics Corporate HQ & Experience Center",
-            address: "Lift#4, House # 13, Road-17/A, Sector-12, Uttara, Dhaka-1230",
-            phone: "+8809612677677",
+            name: "Heeds Ceramics Industries Ltd - Corporate HQ",
+            address: "House no: 03, Road no: 35, Sector 07, Uttara, Dhaka 1230",
+            phone: "+8801907075173",
             hours: "9:00 AM - 8:00 PM (Sat - Thu)",
             mapsUrl: "https://maps.google.com"
         }
