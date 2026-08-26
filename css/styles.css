@@ -391,6 +391,11 @@ button, input, select, textarea {
     padding: 0;
     border-radius: 8px;
     flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.logo-img-wrapper:hover {
+    transform: scale(1.05);
 }
 
 .brand-logo-img {
@@ -398,6 +403,7 @@ button, input, select, textarea {
     width: auto;
     object-fit: contain;
     border-radius: 6px;
+    filter: drop-shadow(0 4px 12px rgba(78, 97, 224, 0.5));
 }
 
 .brand-name {
