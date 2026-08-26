@@ -383,22 +383,21 @@ button, input, select, textarea {
 }
 
 .logo-img-wrapper {
-    height: 46px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF;
-    padding: 3px 10px;
+    background: transparent;
+    padding: 0;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(78, 97, 224, 0.5), 0 0 10px rgba(40, 56, 145, 0.4);
-    border: 1.5px solid var(--royal-blue-light);
     flex-shrink: 0;
 }
 
 .brand-logo-img {
-    height: 38px;
+    height: 46px;
     width: auto;
     object-fit: contain;
+    border-radius: 6px;
 }
 
 .brand-name {
