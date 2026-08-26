@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramics | Bangladesh's Best Brand for Elegant & Vitrified Tiles</title>
+    <meta name="description" content="Experience perfection with Ceramics - Bangladesh's best tiles brand. Discover premium wall, floor, homogeneous, double charge, and vitrified tiles for homes and commercial spaces.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="top-bar" id="topBar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span class="badge-gold-shine"><i class="fa-solid fa-crown"></i> <span data-en="Voted Bangladesh's #1 Ceramic Brand (5 Years Running)" data-bn="বাংলাদেশের ১ নম্বর সেরা সিরামিক ব্র্যান্ড (টানা ৫ বছর)">Voted Bangladesh's #1 Ceramic Brand (5 Years Running)</span></span>
+                <span class="divider">•</span>
+                <a href="tel:+8809612677677" class="top-info-link"><i class="fa-solid fa-phone-volume"></i> Helpline: <strong>+8809612677677</strong></a>
+            </div>
+            <div class="top-actions">
+                <button class="lang-btn" id="langToggleBtn" onclick="toggleLanguage()">
+                    <i class="fa-solid fa-globe"></i> <span id="currentLangLabel">বাংলা</span>
+                </button>
+                <a href="#showrooms" class="top-link"><i class="fa-solid fa-location-dot"></i> <span data-en="Find Showroom" data-bn="শোরুম খুঁজুন">Find Showroom</span></a>
+                <button class="top-link btn-link" onclick="openBrochureModal()"><i class="fa-solid fa-file-pdf"></i> <span data-en="E-Brochure" data-bn="ই-ব্রোশার">E-Brochure</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-emblem">
+                    <span class="logo-letter">C</span>
+                </div>
+                <div class="logo-text">
+                    <div class="brand-name"><span class="gold-text-gradient">CERAMICS</span></div>
+                    <div class="brand-tagline" data-en="PROMISE OF PERFECTION" data-bn="পারফেকশনের প্রতিশ্রুতি">PROMISE OF PERFECTION</div>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" onclick="setActiveNav(this)" data-en="Home" data-bn="হোম">Home</a>
+                <a href="#about" class="nav-link" onclick="setActiveNav(this)" data-en="About Us" data-bn="আমাদের সম্পর্কে">About Us</a>
+                <a href="#catalog" class="nav-link" onclick="setActiveNav(this)" data-en="Collections" data-bn="কালেকশন">Collections</a>
+                <a href="#visualizer" class="nav-link nav-special" onclick="setActiveNav(this)" data-en="AR Studio" data-bn="এআর স্টুডিও">
+                    <i class="fa-solid fa-wand-magic-sparkles spark-icon"></i> <span data-en="AR Studio" data-bn="এআর স্টুডিও">AR Studio</span>
+                </a>
+                <a href="#sustainability" class="nav-link" onclick="setActiveNav(this)" data-en="Technology" data-bn="টেকনোলজি">Technology</a>
+                <a href="#showrooms" class="nav-link" onclick="setActiveNav(this)" data-en="Showrooms" data-bn="শোরুম">Showrooms</a>
+                <a href="#contact" class="nav-link" onclick="setActiveNav(this)" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+            </nav>
+
+            <div class="nav-extra">
+                <button class="btn btn-pill-outline" onclick="openCalculatorModal()">
+                    <i class="fa-solid fa-calculator text-gold"></i> <span data-en="Calculator" data-bn="ক্যালকুলেটর">Calculator</span>
+                </button>
+                <button class="btn btn-pill-gold" onclick="scrollToSection('visualizer')">
+                    <i class="fa-solid fa-eye"></i> <span data-en="Try In Room" data-bn="রুমে দেখুন">Try In Room</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="toggleMobileMenu()"></div>
+    <aside class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="brand-name"><span class="gold-text-gradient">CERAMICS</span></div>
+            <button class="close-btn" onclick="toggleMobileMenu()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mobile-links">
+            <a href="#home" onclick="toggleMobileMenu()"><i class="fa-solid fa-house text-gold"></i> Home</a>
+            <a href="#about" onclick="toggleMobileMenu()"><i class="fa-solid fa-building text-gold"></i> About Us</a>
+            <a href="#catalog" onclick="toggleMobileMenu()"><i class="fa-solid fa-layer-group text-gold"></i> Tile Collections</a>
+            <a href="#visualizer" onclick="toggleMobileMenu()"><i class="fa-solid fa-wand-magic-sparkles text-gold"></i> AR Studio Visualizer</a>
+            <a href="#sustainability" onclick="toggleMobileMenu()"><i class="fa-solid fa-microchip text-gold"></i> Italian Tech & Green Plant</a>
+            <a href="#showrooms" onclick="toggleMobileMenu()"><i class="fa-solid fa-location-dot text-gold"></i> Showroom Locator</a>
+            <a href="#contact" onclick="toggleMobileMenu()"><i class="fa-solid fa-envelope text-gold"></i> Contact Us</a>
+        </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('images/hero.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-glow-orb"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-crown text-gold"></i> <span data-en="BANGLADESH'S NO. 1 TILES BRAND" data-bn="বাংলাদেশের ১ নম্বর সেরা টাইলস ব্র্যান্ড">BANGLADESH'S NO. 1 TILES BRAND</span>
+            </div>
+            <h1 class="hero-title">
+                <span data-en="Evolve Into A Space Of" data-bn="আপনার বাড়িকে সাজান">Evolve Into A Space Of</span><br>
+                <span class="gold-text-gradient" data-en="Sophistication & Elegance" data-bn="অভিজাত্য ও আধুনিকতায়">Sophistication & Elegance</span>
+            </h1>
+            <p class="hero-description" data-en="Crafted with European precision at Mukkhopur, Mymensingh. Over 900+ vitrified designs with annual production of 25.55 Million Sqm." data-bn="ময়মনসিংহের মুক্তাপুরে ইউরোপিয়ান প্রযুক্তিতে নির্মিত। প্রতি বছর ২৫.৫৫ মিলিয়ন বর্গমিটার উৎপাদনে ৯০০+ আকর্ষণীয় ডিজাইন।">
+                Crafted with European precision at Mukkhopur, Mymensingh. Over 900+ vitrified designs with annual production of 25.55 Million Sqm.
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="#catalog" class="btn btn-pill-gold btn-lg">
+                    <i class="fa-solid fa-layer-group"></i> <span data-en="Explore 900+ Designs" data-bn="৯০০+ ডিজাইন দেখুন">Explore 900+ Designs</span>
+                </a>
+                <a href="#visualizer" class="btn btn-pill-glass btn-lg">
+                    <i class="fa-solid fa-cube text-gold"></i> <span data-en="Launch Room Visualizer" data-bn="রুম ভিজ্যুয়ালাইজার">Launch Room Visualizer</span>
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25.55">0</div>
+                    <div class="stat-unit">Million Sqm/Yr</div>
+                    <div class="stat-label" data-en="Tiles Production Capacity" data-bn="বার্ষিক উৎপাদন ক্ষমতা">Tiles Production Capacity</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="67">0</div>
+                    <div class="stat-unit">Acres Plant</div>
+                    <div class="stat-label" data-en="Mukkhopur, Trishal Facility" data-bn="ময়মনসিংহ মেগা ফ্যাক্টরি">Mukkhopur, Trishal Facility</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="900">0</div>
+                    <div class="stat-unit">+ Designs</div>
+                    <div class="stat-label" data-en="Vitrified & Ceramic Collection" data-bn="প্রিমিয়াম টাইপস ও প্যাটার্ন">Vitrified & Ceramic Collection</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-unit">Years Running</div>
+                    <div class="stat-label" data-en="Voted 'Best Brand' Award" data-bn="সেরা ব্র্যান্ড অ্যাওয়ার্ড">Voted 'Best Brand' Award</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview & Heritage Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading" data-en="PROMISE OF PERFECTION SINCE 2012" data-bn="২০১২ সাল থেকে পারফেকশনের প্রতিশ্রুতি">PROMISE OF PERFECTION SINCE 2012</span>
+                <h2 class="section-title" data-en="Leader of Bangladesh's Ceramic Industry" data-bn="বাংলাদেশের সিরামিক ইন্ডাস্ট্রির শীর্ষে সিরামিকস">Leader of Bangladesh's Ceramic Industry</h2>
+                <div class="gold-line center"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card-media">
+                    <div class="media-frame">
+                        <img src="images/factory.jpg" alt="Ceramics Trishal Factory Plant" class="about-img">
+                        <div class="badge-overlay">
+                            <i class="fa-solid fa-microchip text-gold"></i>
+                            <div>
+                                <strong>SACMI Italian Tech</strong>
+                                <span>Continua+ Pressing Lines</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info">
+                    <h3 class="about-heading" data-en="Unwavering Dedication to Excellence & Innovation" data-bn="উৎকর্ষ ও উদ্ভাবনে আমাদের দৃঢ় অঙ্গীকার">
+                        Unwavering Dedication to Excellence & Innovation
+                    </h3>
+                    <p class="about-text" data-en="Since 2012, Ceramics Limited has emerged as the premier leader in the Bangladesh tiles market. Spanning a massive 67-acre state-of-the-art manufacturing facility in Mukkhopur, Trishal, Mymensingh, we produce 25.55 million square meters of high-density ceramic and vitrified tiles annually." data-bn="২০১২ সাল থেকে সিরামিকস লিমিটেড বাংলাদেশের টাইলস শিল্পে শীর্ষ স্থান বজায় রেখে আসছে। ময়মনসিংহের ত্রিশালে ৬৭ একর জায়গা জুড়ে বিস্তৃত আমাদের মেগা কারখানায় প্রতি বছর ২৫.৫৫ মিলিয়ন বর্গমিটার হাই-ডেনসিটি টাইলস তৈরি করা হয়।">
+                        Since 2012, Ceramics Limited has emerged as the premier leader in the Bangladesh tiles market. Spanning a massive 67-acre state-of-the-art manufacturing facility in Mukkhopur, Trishal, Mymensingh, we produce 25.55 million square meters of high-density ceramic and vitrified tiles annually.
+                    </p>
+
+                    <div class="values-list">
+                        <div class="value-box">
+                            <div class="val-icon"><i class="fa-solid fa-gem"></i></div>
+                            <div>
+                                <h4 data-en="Superior European Quality" data-bn="ইউরোপীয় মান">Superior European Quality</h4>
+                                <p data-en="Premium raw clay, automated quality vision scanners, and zero-defect policy." data-bn="উন্নত কাঁচামাল এবং রোবটিক কোয়ালিটি স্ক্যানিং প্রযুক্তি।">Premium raw clay, automated quality vision scanners, and zero-defect policy.</p>
+                            </div>
+                        </div>
+                        <div class="value-box">
+                            <div class="val-icon"><i class="fa-solid fa-palette"></i></div>
+                            <div>
+                                <h4 data-en="Sophisticated Designs" data-bn="অভিজাত ও আধুনিক ডিজাইন">Sophisticated Designs</h4>
+                                <p data-en="High Glossy, Lappato, Diamond Glaze, and Porcelain Matt finishes." data-bn="হাই গ্লসি, লাপ্পাতো, ডায়মন্ড গ্লেজ ও পার্সেলিন ফিনিশ।">High Glossy, Lappato, Diamond Glaze, and Porcelain Matt finishes.</p>
+                            </div>
+                        </div>
+                        <div class="value-box">
+                            <div class="val-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <div>
+                                <h4 data-en="Sustainable Manufacturing" data-bn="পরিবেশবান্ধব উৎপাদন">Sustainable Manufacturing</h4>
+                                <p data-en="Zero wastewater discharge, heat recovery systems, and eco recycling." data-bn="জিরো ওয়াটার ওয়েস্ট প্রসেসিং ও ইউরোপীয় গ্রীন সলিউশন।">Zero wastewater discharge, heat recovery systems, and eco recycling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Catalog & Interactive Filters -->
+    <section class="section catalog-section" id="catalog">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading" data-en="EXPLORE OUR PRODUCT RANGE" data-bn="আমাদের আকর্ষণীয় কালেকশনসমূহ">EXPLORE OUR PRODUCT RANGE</span>
+                <h2 class="section-title" data-en="Discover 900+ Tile Collections" data-bn="আপনার পছন্দের টাইলস নির্বাচন করুন">Discover 900+ Tile Collections</h2>
+                <div class="gold-line center"></div>
+            </div>
+
+            <!-- Filter Toolbar -->
+            <div class="catalog-filters">
+                <!-- Search bar -->
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="catalogSearch" placeholder="Search tile name, size, or pattern (e.g. Calacatta, 60x120, Lappato)..." oninput="filterCatalog()">
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="filter-tabs" id="typeFilters">
+                    <button class="tab-btn active" data-type="all" onclick="filterType('all')">All Types</button>
+                    <button class="tab-btn" data-type="wall" onclick="filterType('wall')">Wall Tiles</button>
+                    <button class="tab-btn" data-type="floor" onclick="filterType('floor')">Floor Tiles</button>
+                    <button class="tab-btn" data-type="homogeneous" onclick="filterType('homogeneous')">Homogeneous</button>
+                    <button class="tab-btn" data-type="double-charge" onclick="filterType('double-charge')">Double Charge</button>
+                    <button class="tab-btn" data-type="stair" onclick="filterType('stair')">Stair & Step</button>
+                </div>
+
+                <!-- Secondary Filter Bar (Surface, Size, Usage) -->
+                <div class="secondary-filters">
+                    <div class="select-wrapper">
+                        <label for="surfaceSelect">Surface Finish:</label>
+                        <select id="surfaceSelect" onchange="filterCatalog()">
+                            <option value="all">All Finishes</option>
+                            <option value="high-glossy">High Glossy</option>
+                            <option value="lappato">Lappato</option>
+                            <option value="polish">Polish</option>
+                            <option value="matt">Matt</option>
+                            <option value="rustic">Rustic</option>
+                            <option value="diamond-glaze">Diamond Glaze</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="sizeSelect">Tile Size (CM):</label>
+                        <select id="sizeSelect" onchange="filterCatalog()">
+                            <option value="all">All Sizes</option>
+                            <option value="100x100">100 x 100 CM</option>
+                            <option value="80x80">80 x 80 CM</option>
+                            <option value="60x120">60 x 120 CM</option>
+                            <option value="60x60">60 x 60 CM</option>
+                            <option value="30x90">30 x 90 CM</option>
+                            <option value="30x60">30 x 60 CM</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="usageSelect">Usage Area:</label>
+                        <select id="usageSelect" onchange="filterCatalog()">
+                            <option value="all">All Applications</option>
+                            <option value="residential">Residential Living</option>
+                            <option value="bathroom">Bathroom & Wet Area</option>
+                            <option value="kitchen">Kitchen & Countertop</option>
+                            <option value="commercial">Commercial / Lobby</option>
+                            <option value="exterior">Exterior & Terrace</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-sm btn-pill-outline" onclick="resetFilters()">
+                        <i class="fa-solid fa-rotate-left"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="catalog-grid" id="catalogGrid">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive AR Room Visualizer Studio -->
+    <section class="section visualizer-section" id="visualizer">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading" data-en="VIRTUAL AR STUDIO EXPERIENCE" data-bn="ভার্চুয়াল এআর স্টুডিও অভিজ্ঞতা">VIRTUAL AR STUDIO EXPERIENCE</span>
+                <h2 class="section-title text-white" data-en="See Tiles In Your Dream Room" data-bn="আপনার পছন্দের রুমে টাইলস বসিয়ে দেখুন">See Tiles In Your Dream Room</h2>
+                <div class="gold-line center"></div>
+                <p class="section-subtitle text-light">Select room type, switch tile collections, change grout shades, and test surface finishes live in 3D scene preview!</p>
+            </div>
+
+            <div class="visualizer-container">
+                <!-- Visualizer Control Panel -->
+                <div class="vis-controls">
+                    <div class="vis-group">
+                        <label><i class="fa-solid fa-house-chimney text-gold"></i> Select Environment:</label>
+                        <div class="room-selector">
+                            <button class="room-btn active" onclick="switchVisRoom('living', this)">
+                                <i class="fa-solid fa-couch"></i> Living Room
+                            </button>
+                            <button class="room-btn" onclick="switchVisRoom('bathroom', this)">
+                                <i class="fa-solid fa-bath"></i> Luxury Bathroom
+                            </button>
+                            <button class="room-btn" onclick="switchVisRoom('bedroom', this)">
+                                <i class="fa-solid fa-bed"></i> Master Bedroom
+                            </button>
+                            <button class="room-btn" onclick="switchVisRoom('kitchen', this)">
+                                <i class="fa-solid fa-utensils"></i> Modern Kitchen
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="vis-group">
+                        <label><i class="fa-solid fa-palette text-gold"></i> Choose Tile Swatch:</label>
+                        <div class="swatch-list" id="visSwatches">
+                            <!-- Swatches populated by JS -->
+                        </div>
+                    </div>
+
+                    <div class="vis-group">
+                        <label><i class="fa-solid fa-border-all text-gold"></i> Tile Layout Style:</label>
+                        <div class="layout-selector">
+                            <button class="layout-btn active" onclick="setTilePattern('grid', this)">Standard Grid (90°)</button>
+                            <button class="layout-btn" onclick="setTilePattern('diamond', this)">Diamond (45°)</button>
+                            <button class="layout-btn" onclick="setTilePattern('staggered', this)">Staggered Brick</button>
+                        </div>
+                    </div>
+
+                    <div class="vis-group">
+                        <label><i class="fa-solid fa-droplet text-gold"></i> Tile Finish Filter:</label>
+                        <div class="finish-tags">
+                            <span class="finish-tag active" id="finishDisplay">High Glossy Polish</span>
+                            <span class="finish-tag" id="sizeDisplay">60 x 120 CM</span>
+                        </div>
+                    </div>
+
+                    <div class="vis-actions">
+                        <button class="btn btn-pill-gold btn-block" onclick="captureVisualizer()">
+                            <i class="fa-solid fa-camera"></i> Save Room Design Snapshot
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Visualizer Display Viewport -->
+                <div class="vis-viewport">
+                    <div class="viewport-canvas-container" id="visCanvasContainer">
+                        <img src="images/hero.jpg" id="visBaseRoomImg" alt="Room Viewport" class="vis-room-img">
+                        <div class="vis-texture-overlay" id="visOverlay"></div>
+                        <div class="vis-watermark">
+                            <i class="fa-solid fa-gem text-gold"></i> CERAMICS AR STUDIO
+                        </div>
+                        <div class="vis-tile-info-badge" id="visBadge">
+                            <span id="visBadgeName">Calacatta Gold Marble</span>
+                            <span id="visBadgeSpecs">60x120 cm | High Glossy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Italian Technology & Sustainability -->
+    <section class="section sustainability-section" id="sustainability">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading" data-en="EUROPEAN PRECISION & GREEN EARTH" data-bn="ইউরোপীয় প্রযুক্তি ও পরিবেশ সচেতনতা">EUROPEAN PRECISION & GREEN EARTH</span>
+                <h2 class="section-title" data-en="World-Class Tech & Eco-Sustainability" data-bn="বিশ্বমানের ইতালি প্রযুক্তি ও সবুজ কারখানা">World-Class Tech & Eco-Sustainability</h2>
+                <div class="gold-line center"></div>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>SACMI Continua+ Line</h3>
+                    <p>Imported Italian continuous compaction technology yielding maximum density, zero micro-cracks, and high breaking strength across all vitrified tiles.</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-print"></i></div>
+                    <h3>HD Inkjet Digital Printing</h3>
+                    <p>8-color ultra HD digital inkjet matrix capturing natural marble veins, stone textures, and wooden grains with 100% natural color accuracy.</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-recycle"></i></div>
+                    <h3>Zero Water Waste System</h3>
+                    <p>100% wastewater treatment plant (ETP) at Trishal facility recycling every drop back into production, setting green industry standards in Bangladesh.</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Diamond Glaze Coating</h3>
+                    <p>Scratch-resistant micro-crystal glaze technology protecting surface shine against heavy foot traffic, acid spills, and UV fading.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom & Dealer Locator -->
+    <section class="section showrooms-section" id="showrooms">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading" data-en="NATIONWIDE DISPLAY & SALES NETWORK" data-bn="সারাদেশে অভিজ্ঞতার সেন্টার">NATIONWIDE DISPLAY & SALES NETWORK</span>
+                <h2 class="section-title" data-en="Find An Exclusive Showroom Near You" data-bn="আপনার নিকটস্থ এক্সক্লুসিভ শোরুম খুঁজুন">Find An Exclusive Showroom Near You</h2>
+                <div class="gold-line center"></div>
+            </div>
+
+            <div class="showroom-finder">
+                <div class="finder-sidebar">
+                    <div class="city-selector">
+                        <label for="citySelect"><i class="fa-solid fa-location-dot text-gold"></i> Choose City / Division:</label>
+                        <select id="citySelect" onchange="renderShowrooms()">
+                            <option value="all">All Bangladesh Locations</option>
+                            <option value="dhaka" selected>Dhaka Division</option>
+                            <option value="chittagong">Chittagong Division</option>
+                            <option value="sylhet">Sylhet Division</option>
+                            <option value="rajshahi">Rajshahi & Bogra</option>
+                            <option value="mymensingh">Mymensingh Division</option>
+                        </select>
+                    </div>
+
+                    <div class="showroom-list" id="showroomList">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+                <div class="finder-map">
+                    <div class="map-placeholder">
+                        <div class="map-overlay-content" id="mapDetailView">
+                            <i class="fa-solid fa-building-flag map-icon text-gold"></i>
+                            <h3 id="mapCenterTitle">Ceramics Experience Center - Banani</h3>
+                            <p id="mapCenterAddr">Simpletree Lighthouse, Plot 53, Road 21, Block-B, Kemal Ataturk Avenue, Banani, Dhaka 1213.</p>
+                            <div class="map-meta">
+                                <span><i class="fa-solid fa-phone"></i> +8809612677677</span>
+                                <span><i class="fa-solid fa-clock"></i> 9:00 AM - 8:00 PM (Sat - Thu)</span>
+                            </div>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-pill-gold btn-sm"><i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Inquiry Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <span class="sub-heading text-gold">GET IN TOUCH WITH US</span>
+                    <h2 class="section-title text-white">Ceramics Headquarters</h2>
+                    <div class="gold-line"></div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Corporate Office:</strong>
+                                <p>Simpletree Lighthouse, Plot 53, Road 21, Block-B, Kemal Ataturk Avenue, Banani, Dhaka 1213, Bangladesh.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-industry"></i>
+                            <div>
+                                <strong>Factory Address:</strong>
+                                <p>Mukkhopur, Trishal, Mymensingh, Bangladesh.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-headset"></i>
+                            <div>
+                                <strong>24/7 Customer Care:</strong>
+                                <p>+8809612677677 | info@ceramics.net</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h3>Send Product Inquiry & Sample Request</h3>
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cName">Your Name *</label>
+                                <input type="text" id="cName" required placeholder="e.g. Nazmul Hossain">
+                            </div>
+                            <div class="form-group">
+                                <label for="cPhone">Phone Number *</label>
+                                <input type="tel" id="cPhone" required placeholder="017XXXXXXXX">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cEmail">Email Address</label>
+                                <input type="email" id="cEmail" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="cInterest">Interest Category</label>
+                                <select id="cInterest">
+                                    <option value="residential">Residential Tiles</option>
+                                    <option value="commercial">Commercial Project / Bulk Order</option>
+                                    <option value="dealership">Dealership Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cMsg">Message / Specific Requirements</label>
+                            <textarea id="cMsg" rows="4" placeholder="Tell us your required tile dimensions, quantity, or project details..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-pill-gold btn-block btn-lg">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="brand-name text-white"><span class="gold-text-gradient">CERAMICS</span></div>
+                <p>Bangladesh's most awarded ceramics brand with annual production capacity of 25.55 million square meters. Crafting perfection since 2012.</p>
+                <div class="award-badge-mini">
+                    <i class="fa-solid fa-crown text-gold"></i> 5-Time Winner: Best Ceramic Tile Brand
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Company</a></li>
+                    <li><a href="#catalog">Wall & Floor Tiles</a></li>
+                    <li><a href="#visualizer">Virtual AR Studio</a></li>
+                    <li><a href="#sustainability">Italian Technology</a></li>
+                    <li><a href="#showrooms">Store Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Tile Types</h4>
+                <ul>
+                    <li><a href="#catalog">Double Charge Vitrified</a></li>
+                    <li><a href="#catalog">Homogeneous Tiles</a></li>
+                    <li><a href="#catalog">High Glossy Marble</a></li>
+                    <li><a href="#catalog">Lappato Finish</a></li>
+                    <li><a href="#catalog">Porcelain Rustic</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe for monthly design catalogs and new tile collections.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Ceramics updates!');">
+                    <input type="email" placeholder="Enter email..." required>
+                    <button type="submit" class="btn btn-pill-gold"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container flex-between">
+                <p>&copy; 2026 Ceramics Limited. All Rights Reserved. Designed with European Excellence.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms & Conditions</a>
+                    <span>|</span>
+                    <a href="#">Imprint</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+
+    <!-- Tile Calculator Modal -->
+    <div class="modal" id="calculatorModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-calculator text-gold"></i> Tile Area & Quantity Calculator</h3>
+                <button class="close-btn" onclick="closeModal('calculatorModal')"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Calculate exact square meters, square feet, and box count required for your room space.</p>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Room Length (Meters):</label>
+                        <input type="number" id="calcLength" value="5" step="0.1" oninput="calculateTiles()">
+                    </div>
+                    <div class="form-group">
+                        <label>Room Width (Meters):</label>
+                        <input type="number" id="calcWidth" value="4" step="0.1" oninput="calculateTiles()">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Selected Tile Size:</label>
+                    <select id="calcTileSize" onchange="calculateTiles()">
+                        <option value="0.72">60 x 120 CM (0.72 m²/tile | 2 tiles/box = 1.44 m²)</option>
+                        <option value="0.64">80 x 80 CM (0.64 m²/tile | 3 tiles/box = 1.92 m²)</option>
+                        <option value="0.36" selected>60 x 60 CM (0.36 m²/tile | 4 tiles/box = 1.44 m²)</option>
+                        <option value="0.18">30 x 60 CM (0.18 m²/tile | 8 tiles/box = 1.44 m²)</option>
+                    </select>
+                </div>
+                <div class="calc-results" id="calcResults">
+                    <div class="calc-card">
+                        <span>Total Floor Area</span>
+                        <strong id="resSqm">20.00 m²</strong>
+                        <small id="resSqft">(215.28 sq ft)</small>
+                    </div>
+                    <div class="calc-card gold-border">
+                        <span>Recommended Boxes (+10% Waste)</span>
+                        <strong id="resBoxes" class="text-gold">16 Boxes</strong>
+                        <small id="resTotalTiles">64 Total Tiles</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brochure Modal -->
+    <div class="modal" id="brochureModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-file-pdf text-gold"></i> Download E-Brochures</h3>
+                <button class="close-btn" onclick="closeModal('brochureModal')"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="brochure-list">
+                    <div class="brochure-item">
+                        <div>
+                            <strong>Vitrified Tile Collection 2026</strong>
+                            <p>PDF | 12.4 MB | High Glossy, Lappato & Double Charge</p>
+                        </div>
+                        <button class="btn btn-pill-gold btn-sm" onclick="downloadBrochure('Vitrified Collection')"><i class="fa-solid fa-download"></i> Download</button>
+                    </div>
+                    <div class="brochure-item">
+                        <div>
+                            <strong>Wall & Bathroom Tiles Catalog</strong>
+                            <p>PDF | 8.8 MB | Decorative Wall Tiles & Borders</p>
+                        </div>
+                        <button class="btn btn-pill-gold btn-sm" onclick="downloadBrochure('Wall Tiles Catalog')"><i class="fa-solid fa-download"></i> Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h3 id="pModalTitle">Product Details</h3>
+                <button class="close-btn" onclick="closeModal('productModal')"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body" id="pModalBody">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Inquiry submitted successfully!</div>
+
+    <!-- JavaScript Application Logic -->
+    <script src="js/app.js"></script>
+</body>
+</html>
