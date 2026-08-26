@@ -111,56 +111,6 @@ const SHOWROOMS_DATA = {
             phone: "+8809612677677",
             hours: "9:00 AM - 8:00 PM (Sat - Thu)",
             mapsUrl: "https://maps.google.com"
-        },
-        {
-            name: "Uttara Exclusive Display Center",
-            address: "Plot 12, Sector 7, Sonargaon Janapath Road, Uttara, Dhaka 1230",
-            phone: "+8801700705541",
-            hours: "10:00 AM - 8:00 PM (Sat - Thu)",
-            mapsUrl: "https://maps.google.com"
-        },
-        {
-            name: "Dhanmondi Signature Lounge",
-            address: "House 45, Road 27 (Old), Dhanmondi R/A, Dhaka 1209",
-            phone: "+8801700705542",
-            hours: "10:00 AM - 8:00 PM (Sat - Thu)",
-            mapsUrl: "https://maps.google.com"
-        }
-    ],
-    chittagong: [
-        {
-            name: "Agrabad Commercial Showroom",
-            address: "Akhtar Uz Zaman Center, 21/22 Agrabad Commercial Area, Chittagong",
-            phone: "+8801700705550",
-            hours: "9:30 AM - 8:00 PM (Sat - Thu)",
-            mapsUrl: "https://maps.google.com"
-        }
-    ],
-    sylhet: [
-        {
-            name: "Sylhet Zindabazar Showroom",
-            address: "Millennium Shopping Complex, Zindabazar, Sylhet 3100",
-            phone: "+8801700705560",
-            hours: "10:00 AM - 8:00 PM (Sat - Thu)",
-            mapsUrl: "https://maps.google.com"
-        }
-    ],
-    rajshahi: [
-        {
-            name: "Bogra Central Gallery",
-            address: "Sherpur Road, Joleswhitola, Bogra",
-            phone: "+8801700705570",
-            hours: "9:00 AM - 7:30 PM (Sat - Thu)",
-            mapsUrl: "https://maps.google.com"
-        }
-    ],
-    mymensingh: [
-        {
-            name: "Trishal Factory Display Hub",
-            address: "Mukkhopur, Dhaka-Mymensingh Highway, Trishal, Mymensingh",
-            phone: "+8801700705580",
-            hours: "8:30 AM - 6:00 PM (Sat - Thu)",
-            mapsUrl: "https://maps.google.com"
         }
     ]
 };
