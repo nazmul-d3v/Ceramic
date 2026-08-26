@@ -1,5 +1,5 @@
 /* ==========================================================================
-   AKIJ CERAMICS - INTERACTIVE JAVASCRIPT APPLICATION
+   HEEDS CERAMICS - INTERACTIVE JAVASCRIPT APPLICATION
    ========================================================================== */
 
 // 1. PRODUCT CATALOG DATASET (With High-Res Catalog Images & Luxury Swatch Patterns)

@@ -33,7 +33,7 @@ Experience the live interactive application deployed on Vercel:
 - **🧮 Smart Tile & Cost Calculator**: Built-in calculator that computes total area (sq ft), number of boxes required, recommended wastage allowance (10%), and estimated total cost.
 - **📍 Showroom Locator**: Interactive showroom finder organized by division (Dhaka, Chittagong, Sylhet, Rajshahi, Mymensingh) complete with contact details, opening hours, and direct Google Maps navigation.
 - **📄 Interactive E-Brochure & Consultation Modal**: Instant download trigger and inquiry modal for custom quote requests.
-- **💎 Ultra-Premium UI/UX Design**: Built with a sleek dark-gold glassmorphism aesthetic, ambient glow lighting, micro-interactions, responsive navigation, and floating action triggers.
+- **💎 Ultra-Premium UI/UX Design**: Built with a sleek dark Royal Blue glassmorphism aesthetic based on the official logo, ambient glow lighting, micro-interactions, responsive navigation, and floating action triggers.
 
 ---
 
