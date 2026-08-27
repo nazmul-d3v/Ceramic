@@ -20,7 +20,7 @@ Experience the live interactive application deployed on Vercel:
 ## 🏢 Brand Identity
 
 - **Brand Name**: **Heeds Ceramics**
-- **Company Name**: **Heeds Ceramics Industries Ltd. (হীডস সিরামিকস ইন্ডাস্ট্রিজ লিঃ)**
+- **Company Name**: **Heeds Ceramics Industries Ltd.**
 - **Official Logo**: Custom logo badge integrated across header, mobile drawer menu, and footer.
 
 ---
