@@ -115,26 +115,6 @@ const PRODUCTS_DATA = [
     }
 ];
 
-// 1.1. ORBIT SANITARYWARE OFFICIAL PDF CATALOG PAGES DATASET (Exclusively for E-Brochure Section)
-const ORBIT_PDF_PAGES = [
-    { page: 1, title: "Marvello Close Coupled Water Closet", spec: "770x710x360 mm | Double Vortex 4.5/6.0L Flush | Soft Close", img: "images/sanitaryware/orbit_page_1.png" },
-    { page: 2, title: "Marvello Wash Basin & Pedestal Set", spec: "565x475x870 mm | High Overflow Volume | Deep Bowl", img: "images/sanitaryware/orbit_page_2.png" },
-    { page: 3, title: "Lusaro Close Coupled Water Closet", spec: "770x720x365 mm | Siphonic Double Vortex | 25% Water Saving", img: "images/sanitaryware/orbit_page_3.png" },
-    { page: 4, title: "Lusaro Wash Basin (45cm) & Pedestal", spec: "460x370x860 mm | Compact Design | Anti-splash Rim", img: "images/sanitaryware/orbit_page_4.png" },
-    { page: 5, title: "Arvento One Piece Water Closet", spec: "650x740x380 mm | One Piece Z-Flush | Noiseless Hinge", img: "images/sanitaryware/orbit_page_5.png" },
-    { page: 6, title: "Arvento Wash Basin (55cm) & Pedestal", spec: "650x525x845 mm | 55cm Luxury Rim | Germ Resistant", img: "images/sanitaryware/orbit_page_6.png" },
-    { page: 7, title: "Arvento Standard Wash Basin & Pedestal", spec: "650x500x840 mm | Standard Full Pedestal Set", img: "images/sanitaryware/orbit_page_7.png" },
-    { page: 8, title: "Serenza Corner Wash Basin & Pedestal", spec: "400x385x835 mm | Space Saver Triangular Corner", img: "images/sanitaryware/orbit_page_8.png" },
-    { page: 9, title: "Fiorenzo Wash Basin & Pedestal", spec: "580x450x700 mm | Curved Rim | Anti-stain Glaze", img: "images/sanitaryware/orbit_page_9.png" },
-    { page: 10, title: "Cremona (Big) Wash Basin & Pedestal", spec: "620x485x730 mm | Jumbo Rectangular Format", img: "images/sanitaryware/orbit_page_10.png" },
-    { page: 11, title: "Cremona (Small) Wash Basin & Pedestal", spec: "530x425x730 mm | Medium Format Basin", img: "images/sanitaryware/orbit_page_11.png" },
-    { page: 12, title: "Lucano Wash Basin & Pedestal", spec: "600x470x880 mm | Ergonomic High Pedestal Profile", img: "images/sanitaryware/orbit_page_12.png" },
-    { page: 13, title: "Asiaro 25 CM Water Closet Pan", spec: "560x410x250 mm | 25 CM Depth Squatting Pan", img: "images/sanitaryware/orbit_page_13.png" },
-    { page: 14, title: "Asiaro 29 CM Water Closet Pan", spec: "575x470x280 mm | 29 CM Deep Bowl Squatting Pan", img: "images/sanitaryware/orbit_page_14.png" },
-    { page: 15, title: "Serano Table Top Wash Basin (Round)", spec: "400x400x210 mm | Circular Vanity Countertop Vessel", img: "images/sanitaryware/orbit_page_15.png" },
-    { page: 16, title: "Serano Table Top Wash Basin (Rectangular)", spec: "510x400x190 mm | Rectangular Vanity Countertop Vessel", img: "images/sanitaryware/orbit_page_16.png" }
-];
-
 // 2. SHOWROOM LOCATIONS DATASET
 const SHOWROOMS_DATA = {
     dhaka: [
@@ -156,7 +136,6 @@ let selectedTileForVis = PRODUCTS_DATA[0];
 // DOM Content Loaded Initialization
 document.addEventListener('DOMContentLoaded', () => {
     initCatalog();
-    renderOrbitPdfGallery();
     initVisualizerSwatches();
     renderShowrooms();
     initStatsCounter();
@@ -166,45 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // 3. CATALOG RENDERING & FILTERING
 function initCatalog() {
     renderCatalogGrid(PRODUCTS_DATA);
-}
-
-function renderOrbitPdfGallery() {
-    const galleryContainer = document.getElementById('orbitPdfGalleryGrid');
-    if (!galleryContainer) return;
-
-    galleryContainer.innerHTML = ORBIT_PDF_PAGES.map(p => `
-        <div class="pdf-page-card" onclick="openPdfPreviewModal(${p.page})">
-            <div class="pdf-page-img-wrapper">
-                <img src="${p.img}" alt="${p.title}" class="pdf-page-img">
-                <div class="pdf-page-overlay">
-                    <span class="btn btn-pill-gold btn-sm"><i class="fa-solid fa-magnifying-glass-plus"></i> View Page ${p.page}</span>
-                </div>
-            </div>
-            <div class="pdf-page-info">
-                <span class="pdf-page-num">PAGE ${p.page} OF 16</span>
-                <h4 class="pdf-page-title">${p.title}</h4>
-                <p class="pdf-page-spec">${p.spec}</p>
-            </div>
-        </div>
-    `).join('');
-}
-
-function openPdfPreviewModal(pageNumber) {
-    const p = ORBIT_PDF_PAGES.find(item => item.page === pageNumber);
-    if (!p) return;
-
-    document.getElementById('pModalTitle').textContent = `Orbit Catalog Page ${p.page}: ${p.title}`;
-    document.getElementById('pModalBody').innerHTML = `
-        <div style="text-align:center;">
-            <img src="${p.img}" alt="${p.title}" style="max-width:100%; max-height:70vh; border-radius:12px; border:2px solid var(--gold); box-shadow:0 10px 30px rgba(0,0,0,0.8); margin-bottom:16px;">
-            <div style="display:flex; justify-content:center; gap:16px;">
-                <a href="Orbit_Sanitaryware_Catalog.pdf" download="Orbit_Sanitaryware_Catalog.pdf" class="btn btn-pill-gold btn-lg">
-                    <i class="fa-solid fa-download"></i> Download Complete 16-Page PDF Catalog (3.6 MB)
-                </a>
-            </div>
-        </div>
-    `;
-    document.getElementById('productModal').classList.add('active');
 }
 
 function renderCatalogGrid(items) {
