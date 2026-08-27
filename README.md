@@ -93,13 +93,47 @@ To run this project locally on your machine:
 
 ---
 
+## ⚡ How to Deploy & Run on Vercel
+
+You can deploy and run this project live on Vercel in two easy ways:
+
+### Option 1: Automatic Deployment via GitHub Integration (Recommended)
+1. Push your latest code changes to the `main` branch of your GitHub repository:
+   ```bash
+   git add .
+   git commit -m "feat: update Heeds Ceramics website with Orbit Sanitaryware & PDF catalog"
+   git push origin main
+   ```
+2. Connect your GitHub repository (`nazmul-d3v/Ceramic`) to [Vercel Dashboard](https://vercel.com/new).
+3. Vercel will automatically detect the static project and deploy it instantly.
+4. Any new `git push` to `main` will automatically trigger a new production deployment.
+
+### Option 2: Direct Deployment using Vercel CLI
+You can deploy directly from your local terminal using `npx vercel`:
+
+1. **Deploy Preview Build**:
+   ```bash
+   npx vercel
+   ```
+2. **Deploy directly to Production**:
+   ```bash
+   npx vercel --prod
+   ```
+
+---
+
 ## 📤 Git Commit & Push Commands
 
-To commit and push all changes to GitHub:
+To stage, commit, and push all recent changes to GitHub:
 
 ```bash
+# 1. Stage all new/modified files
 git add .
-git commit -m "feat: rebrand to Heeds Ceramics Industries Ltd. with official logo"
+
+# 2. Create a descriptive commit
+git commit -m "feat: update site with Orbit Sanitaryware catalog & Vercel deployment guide"
+
+# 3. Push to GitHub main branch
 git push origin main
 ```
 
