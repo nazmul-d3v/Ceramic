@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=1.0.1">
+    <link rel="stylesheet" href="css/styles.css?v=1.0.2">
 </head>
 <body>
     <!-- Top Announcement Bar -->
@@ -232,7 +232,6 @@
                 <!-- Category Tabs -->
                 <div class="filter-tabs" id="typeFilters">
                     <button class="tab-btn active" data-type="all" onclick="filterType('all')">All Types</button>
-                    <button class="tab-btn" data-type="sanitaryware" onclick="filterType('sanitaryware')"><i class="fa-solid fa-toilet"></i> Sanitaryware & Closets</button>
                     <button class="tab-btn" data-type="wall" onclick="filterType('wall')">Wall Tiles</button>
                     <button class="tab-btn" data-type="floor" onclick="filterType('floor')">Floor Tiles</button>
                     <button class="tab-btn" data-type="homogeneous" onclick="filterType('homogeneous')">Homogeneous</button>
@@ -322,6 +321,15 @@
                         <span>16 Pages PDF</span>
                     </div>
                 </div>
+            </div>
+
+            <!-- PDF Page Browser Gallery -->
+            <div class="pdf-gallery-header">
+                <h3 class="pdf-gallery-title"><i class="fa-solid fa-book-open text-gold"></i> Browse Orbit PDF Catalog Pages (1 - 16)</h3>
+                <p class="pdf-gallery-subtitle">Click on any page below to inspect HD dimensions, technical drawings, and specifications.</p>
+            </div>
+            <div class="pdf-gallery-grid" id="orbitPdfGalleryGrid">
+                <!-- Injected via JS -->
             </div>
         </div>
     </section>
@@ -739,6 +747,6 @@
     <div class="toast" id="toast">Inquiry submitted successfully!</div>
 
     <!-- JavaScript Application Logic -->
-    <script src="js/app.js?v=1.0.1"></script>
+    <script src="js/app.js?v=1.0.2"></script>
 </body>
 </html>

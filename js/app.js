@@ -101,199 +101,38 @@ const PRODUCTS_DATA = [
         spec: "Thickness: 8.5mm | 3D Relief Gold Art | Water Repellent"
     },
 
-    /* --- ORBIT SANITARYWARE & WATER CLOSET CATALOG ITEMS --- */
     {
-        id: "orbit-01",
-        name: "Orbit Marvello Close Coupled Water Closet",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "77x71",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_1.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Close coupled water closet with soft hinges seat & cover Z flushing unit. Double vortex 4.5L & 6.0L per flush.",
-        spec: "Dimensions: 770 x 710 x 360 mm | Trap Distance: 240 mm | Flush: Double Vortex 4.5/6.0L | Metal Slow Hinge (Noiseless) | 25% Water Savings"
-    },
-    {
-        id: "orbit-02",
-        name: "Orbit Marvello Wash Basin & Pedestal Set",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "56x47",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_2.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Full pedestal wash basin set featuring high overflow volume and extended bowl depth.",
-        spec: "Dimensions: 565 x 475 mm | Height: 870 mm | Bowl Depth: 215 mm | High Overflow Protection | Easy Clean & Anti-stain Glaze"
-    },
-    {
-        id: "orbit-03",
-        name: "Orbit Lusaro Close Coupled Water Closet",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "77x72",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_3.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Siphonic double vortex close coupled water closet with soft close seat cover.",
-        spec: "Dimensions: 770 x 720 x 365 mm | Trap Distance: 305/350 mm | Flush: Siphonic Double Vortex 4.5/6.0L | Water Saving 25%"
-    },
-    {
-        id: "orbit-04",
-        name: "Orbit Lusaro Wash Basin (45cm) & Pedestal",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "46x37",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_4.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Compact 45cm pedestal wash basin with extended bowl depth and high overflow protection.",
-        spec: "Dimensions: 460 x 370 mm | Height: 860 mm | Anti-splash Rim | Easy Clean Comfortable Surface"
-    },
-    {
-        id: "orbit-05",
-        name: "Orbit Arvento One Piece Water Closet",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "65x74",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_5.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Luxury one-piece water closet with soft hinges seat & cover Z flushing unit.",
-        spec: "Dimensions: 650 x 740 x 380 mm | Trap Distance: 305 mm | Flush: Z-Flush Double Vortex 4.5/6.0L | Noiseless Slow Hinge"
-    },
-    {
-        id: "orbit-06",
-        name: "Orbit Arvento Wash Basin (55cm) & Pedestal",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "65x52",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_6.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "55cm luxury pedestal wash basin set designed with maximum overflow capacity.",
-        spec: "Dimensions: 650 x 525 mm | Height: 845 mm | High Overflow Volume | Hygienic & Germ Resistant"
-    },
-    {
-        id: "orbit-07",
-        name: "Orbit Arvento Standard Wash Basin & Pedestal",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "65x50",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_7.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Standard full pedestal wash basin for modern bathroom installations.",
-        spec: "Dimensions: 650 x 500 mm | Height: 840 mm | Extended Bowl Depth | Anti-splash Construction"
-    },
-    {
-        id: "orbit-08",
-        name: "Orbit Serenza Corner Wash Basin & Pedestal",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "40x38",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_8.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Space-saving triangular corner wash basin & pedestal set.",
-        spec: "Dimensions: 400 x 385 mm | Height: 835 mm | Design: Triangular Corner Fit | Space Maximizer"
-    },
-    {
-        id: "orbit-09",
-        name: "Orbit Fiorenzo Wash Basin & Pedestal",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "58x45",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_9.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Classic curved basin design with full pedestal support.",
-        spec: "Dimensions: 580 x 450 mm | Height: 700 mm | Extended Bowl Depth | Anti-stain Smooth Glaze"
-    },
-    {
-        id: "orbit-10",
-        name: "Orbit Cremona (Big) Wash Basin & Pedestal",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "62x48",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_10.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Jumbo format rectangular wash basin with deep basin volume.",
-        spec: "Dimensions: 620 x 485 mm | Height: 730 mm | High Overflow Volume | Stain & Germ Resistant"
-    },
-    {
-        id: "orbit-11",
-        name: "Orbit Cremona (Small) Wash Basin & Pedestal",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "53x42",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_11.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Medium format rectangular pedestal wash basin set.",
-        spec: "Dimensions: 530 x 425 mm | Height: 730 mm | High Overflow Protection | Easy Maintenance"
-    },
-    {
-        id: "orbit-12",
-        name: "Orbit Lucano Wash Basin & Pedestal",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "60x47",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_12.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Ergonomic high-pedestal wash basin with modern oval bowl profile.",
-        spec: "Dimensions: 600 x 470 mm | Height: 880 mm | Bowl Depth: 405 mm | High Comfort Ergonomics"
-    },
-    {
-        id: "orbit-13",
-        name: "Orbit Asiaro 25 CM Water Closet Pan",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "56x41",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_13.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "25 CM depth traditional squatting pan with anti-splash bowl contour.",
-        spec: "Dimensions: 560 x 410 mm | Bowl Depth: 250 mm | Outlet: 55 mm | Footrest Width: 100 mm"
-    },
-    {
-        id: "orbit-14",
-        name: "Orbit Asiaro 29 CM Water Closet Pan",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "57x47",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_14.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "29 CM deep bowl squatting pan with ribbed anti-slip footrests.",
-        spec: "Dimensions: 575 x 470 mm | Bowl Depth: 280 mm | Outlet: 55 mm | Footrest Width: 100 mm"
-    },
-    {
-        id: "orbit-15",
-        name: "Orbit Serano Table Top Wash Basin (Round)",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "40x40",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_15.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Luxury round table top wash basin for bathroom vanity counters.",
-        spec: "Dimensions: 400 mm Diameter | Height: 210 mm | High Overflow Volume | Vanity Countertop Installation"
-    },
-    {
-        id: "orbit-16",
-        name: "Orbit Serano Table Top Wash Basin (Rectangular)",
-        type: "sanitaryware",
-        surface: "vitrified-ceramic",
-        size: "51x40",
-        usage: "bathroom",
-        image: "images/sanitaryware/orbit_page_16.png",
-        pattern: "linear-gradient(135deg, #0A192F 0%, #172A45 100%)",
-        desc: "Sleek rectangular table top vessel basin for contemporary vanity units.",
-        spec: "Dimensions: 510 x 400 mm | Height: 190 mm | Anti-splash Rim | Easy Clean Porcelain Glaze"
+        id: "tile-08",
+        name: "Panora Floral Decor Wall",
+        type: "wall",
+        surface: "high-glossy",
+        size: "30x60",
+        usage: "kitchen",
+        image: "images/tiles/tile_panora_gold_1787766338372.jpg",
+        pattern: "linear-gradient(135deg, #1A1A1A 0%, #CFA529 60%, #1A1A1A 100%)",
+        desc: "Designer feature wall tile with metallic gold leaf botanical art for luxury kitchen splashbacks.",
+        spec: "Thickness: 8.5mm | 3D Relief Gold Art | Water Repellent"
     }
+];
+
+// 1.1. ORBIT SANITARYWARE OFFICIAL PDF CATALOG PAGES DATASET (Exclusively for E-Brochure Section)
+const ORBIT_PDF_PAGES = [
+    { page: 1, title: "Marvello Close Coupled Water Closet", spec: "770x710x360 mm | Double Vortex 4.5/6.0L Flush | Soft Close", img: "images/sanitaryware/orbit_page_1.png" },
+    { page: 2, title: "Marvello Wash Basin & Pedestal Set", spec: "565x475x870 mm | High Overflow Volume | Deep Bowl", img: "images/sanitaryware/orbit_page_2.png" },
+    { page: 3, title: "Lusaro Close Coupled Water Closet", spec: "770x720x365 mm | Siphonic Double Vortex | 25% Water Saving", img: "images/sanitaryware/orbit_page_3.png" },
+    { page: 4, title: "Lusaro Wash Basin (45cm) & Pedestal", spec: "460x370x860 mm | Compact Design | Anti-splash Rim", img: "images/sanitaryware/orbit_page_4.png" },
+    { page: 5, title: "Arvento One Piece Water Closet", spec: "650x740x380 mm | One Piece Z-Flush | Noiseless Hinge", img: "images/sanitaryware/orbit_page_5.png" },
+    { page: 6, title: "Arvento Wash Basin (55cm) & Pedestal", spec: "650x525x845 mm | 55cm Luxury Rim | Germ Resistant", img: "images/sanitaryware/orbit_page_6.png" },
+    { page: 7, title: "Arvento Standard Wash Basin & Pedestal", spec: "650x500x840 mm | Standard Full Pedestal Set", img: "images/sanitaryware/orbit_page_7.png" },
+    { page: 8, title: "Serenza Corner Wash Basin & Pedestal", spec: "400x385x835 mm | Space Saver Triangular Corner", img: "images/sanitaryware/orbit_page_8.png" },
+    { page: 9, title: "Fiorenzo Wash Basin & Pedestal", spec: "580x450x700 mm | Curved Rim | Anti-stain Glaze", img: "images/sanitaryware/orbit_page_9.png" },
+    { page: 10, title: "Cremona (Big) Wash Basin & Pedestal", spec: "620x485x730 mm | Jumbo Rectangular Format", img: "images/sanitaryware/orbit_page_10.png" },
+    { page: 11, title: "Cremona (Small) Wash Basin & Pedestal", spec: "530x425x730 mm | Medium Format Basin", img: "images/sanitaryware/orbit_page_11.png" },
+    { page: 12, title: "Lucano Wash Basin & Pedestal", spec: "600x470x880 mm | Ergonomic High Pedestal Profile", img: "images/sanitaryware/orbit_page_12.png" },
+    { page: 13, title: "Asiaro 25 CM Water Closet Pan", spec: "560x410x250 mm | 25 CM Depth Squatting Pan", img: "images/sanitaryware/orbit_page_13.png" },
+    { page: 14, title: "Asiaro 29 CM Water Closet Pan", spec: "575x470x280 mm | 29 CM Deep Bowl Squatting Pan", img: "images/sanitaryware/orbit_page_14.png" },
+    { page: 15, title: "Serano Table Top Wash Basin (Round)", spec: "400x400x210 mm | Circular Vanity Countertop Vessel", img: "images/sanitaryware/orbit_page_15.png" },
+    { page: 16, title: "Serano Table Top Wash Basin (Rectangular)", spec: "510x400x190 mm | Rectangular Vanity Countertop Vessel", img: "images/sanitaryware/orbit_page_16.png" }
 ];
 
 // 2. SHOWROOM LOCATIONS DATASET
@@ -317,6 +156,7 @@ let selectedTileForVis = PRODUCTS_DATA[0];
 // DOM Content Loaded Initialization
 document.addEventListener('DOMContentLoaded', () => {
     initCatalog();
+    renderOrbitPdfGallery();
     initVisualizerSwatches();
     renderShowrooms();
     initStatsCounter();
@@ -326,6 +166,45 @@ document.addEventListener('DOMContentLoaded', () => {
 // 3. CATALOG RENDERING & FILTERING
 function initCatalog() {
     renderCatalogGrid(PRODUCTS_DATA);
+}
+
+function renderOrbitPdfGallery() {
+    const galleryContainer = document.getElementById('orbitPdfGalleryGrid');
+    if (!galleryContainer) return;
+
+    galleryContainer.innerHTML = ORBIT_PDF_PAGES.map(p => `
+        <div class="pdf-page-card" onclick="openPdfPreviewModal(${p.page})">
+            <div class="pdf-page-img-wrapper">
+                <img src="${p.img}" alt="${p.title}" class="pdf-page-img">
+                <div class="pdf-page-overlay">
+                    <span class="btn btn-pill-gold btn-sm"><i class="fa-solid fa-magnifying-glass-plus"></i> View Page ${p.page}</span>
+                </div>
+            </div>
+            <div class="pdf-page-info">
+                <span class="pdf-page-num">PAGE ${p.page} OF 16</span>
+                <h4 class="pdf-page-title">${p.title}</h4>
+                <p class="pdf-page-spec">${p.spec}</p>
+            </div>
+        </div>
+    `).join('');
+}
+
+function openPdfPreviewModal(pageNumber) {
+    const p = ORBIT_PDF_PAGES.find(item => item.page === pageNumber);
+    if (!p) return;
+
+    document.getElementById('pModalTitle').textContent = `Orbit Catalog Page ${p.page}: ${p.title}`;
+    document.getElementById('pModalBody').innerHTML = `
+        <div style="text-align:center;">
+            <img src="${p.img}" alt="${p.title}" style="max-width:100%; max-height:70vh; border-radius:12px; border:2px solid var(--gold); box-shadow:0 10px 30px rgba(0,0,0,0.8); margin-bottom:16px;">
+            <div style="display:flex; justify-content:center; gap:16px;">
+                <a href="Orbit_Sanitaryware_Catalog.pdf" download="Orbit_Sanitaryware_Catalog.pdf" class="btn btn-pill-gold btn-lg">
+                    <i class="fa-solid fa-download"></i> Download Complete 16-Page PDF Catalog (3.6 MB)
+                </a>
+            </div>
+        </div>
+    `;
+    document.getElementById('productModal').classList.add('active');
 }
 
 function renderCatalogGrid(items) {
