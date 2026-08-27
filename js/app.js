@@ -97,15 +97,6 @@ const PRODUCTS_DATA = [
         usage: "kitchen",
         image: "images/tiles/tile_panora_gold_1787766338372.jpg",
         pattern: "linear-gradient(135deg, #1A1A1A 0%, #CFA529 60%, #1A1A1A 100%)",
-    {
-        id: "tile-08",
-        name: "Panora Floral Decor Wall",
-        type: "wall",
-        surface: "high-glossy",
-        size: "30x60",
-        usage: "kitchen",
-        image: "images/tiles/tile_panora_gold_1787766338372.jpg",
-        pattern: "linear-gradient(135deg, #1A1A1A 0%, #CFA529 60%, #1A1A1A 100%)",
         desc: "Designer feature wall tile with metallic gold leaf botanical art for luxury kitchen splashbacks.",
         spec: "Thickness: 8.5mm | 3D Relief Gold Art | Water Repellent"
     },
