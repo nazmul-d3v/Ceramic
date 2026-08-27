@@ -232,6 +232,7 @@
                 <!-- Category Tabs -->
                 <div class="filter-tabs" id="typeFilters">
                     <button class="tab-btn active" data-type="all" onclick="filterType('all')">All Types</button>
+                    <button class="tab-btn" data-type="sanitaryware" onclick="filterType('sanitaryware')"><i class="fa-solid fa-toilet"></i> Sanitaryware & Closets</button>
                     <button class="tab-btn" data-type="wall" onclick="filterType('wall')">Wall Tiles</button>
                     <button class="tab-btn" data-type="floor" onclick="filterType('floor')">Floor Tiles</button>
                     <button class="tab-btn" data-type="homogeneous" onclick="filterType('homogeneous')">Homogeneous</button>
@@ -288,6 +289,39 @@
             <!-- Product Grid -->
             <div class="catalog-grid" id="catalogGrid">
                 <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Orbit E-Brochure & Sanitaryware Catalog Showcase -->
+    <section class="section e-brochure-section" id="ebrochure">
+        <div class="container">
+            <div class="ebrochure-card">
+                <div class="ebrochure-content">
+                    <div class="badge-gold-shine mb-2"><i class="fa-solid fa-file-pdf"></i> OFFICIAL E-BROCHURE & CATALOG</div>
+                    <h2 class="ebrochure-title">Orbit Sanitaryware & Water Closet Catalog</h2>
+                    <p class="ebrochure-text">Download the complete 16-page official PDF catalog containing all technical specifications, dimensions, features, and benefits for Marvello, Lusaro, Arvento, Serenza, Fiorenzo, Cremona, Lucano, and Asiaro sets.</p>
+                    <div class="ebrochure-highlights">
+                        <span><i class="fa-solid fa-check text-gold"></i> Complete 16 Pages PDF</span>
+                        <span><i class="fa-solid fa-check text-gold"></i> HD Technical Drawings</span>
+                        <span><i class="fa-solid fa-check text-gold"></i> Direct PDF Download (3.6 MB)</span>
+                    </div>
+                    <div class="ebrochure-actions">
+                        <a href="Orbit_Sanitaryware_Catalog.pdf" download="Orbit_Sanitaryware_Catalog.pdf" class="btn btn-pill-gold btn-lg">
+                            <i class="fa-solid fa-download"></i> Download Orbit Catalog (PDF)
+                        </a>
+                        <a href="Orbit_Sanitaryware_Catalog.pdf" target="_blank" class="btn btn-pill-outline btn-lg">
+                            <i class="fa-solid fa-eye"></i> View PDF Online
+                        </a>
+                    </div>
+                </div>
+                <div class="ebrochure-preview">
+                    <img src="images/sanitaryware/orbit_page_1.png" alt="Orbit Sanitaryware PDF Preview" class="ebrochure-preview-img">
+                    <div class="ebrochure-badge-float">
+                        <i class="fa-solid fa-file-pdf text-gold"></i>
+                        <span>16 Pages PDF</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -661,19 +695,27 @@
             </div>
             <div class="modal-body">
                 <div class="brochure-list">
+                    <div class="brochure-item featured-brochure">
+                        <div>
+                            <span class="badge-gold-shine" style="font-size:0.7rem; padding: 2px 8px; margin-bottom: 4px; display:inline-block;">FEATURED CATALOG</span>
+                            <strong style="display:block; font-size:1.05rem;">Orbit Sanitaryware & Water Closet Catalog</strong>
+                            <p>PDF | 3.6 MB | Marvello, Lusaro, Arvento, Serenza, Fiorenzo, Cremona, Lucano & Asiaro Sets</p>
+                        </div>
+                        <a href="Orbit_Sanitaryware_Catalog.pdf" download="Orbit_Sanitaryware_Catalog.pdf" class="btn btn-pill-gold btn-sm"><i class="fa-solid fa-download"></i> Download PDF</a>
+                    </div>
                     <div class="brochure-item">
                         <div>
                             <strong>Vitrified Tile Collection 2026</strong>
                             <p>PDF | 12.4 MB | High Glossy, Lappato & Double Charge</p>
                         </div>
-                        <button class="btn btn-pill-gold btn-sm" onclick="downloadBrochure('Vitrified Collection')"><i class="fa-solid fa-download"></i> Download</button>
+                        <a href="Orbit_Sanitaryware_Catalog.pdf" download="Vitrified_Tile_Collection.pdf" class="btn btn-pill-outline btn-sm"><i class="fa-solid fa-download"></i> Download</a>
                     </div>
                     <div class="brochure-item">
                         <div>
                             <strong>Wall & Bathroom Tiles Catalog</strong>
                             <p>PDF | 8.8 MB | Decorative Wall Tiles & Borders</p>
                         </div>
-                        <button class="btn btn-pill-gold btn-sm" onclick="downloadBrochure('Wall Tiles Catalog')"><i class="fa-solid fa-download"></i> Download</button>
+                        <a href="Orbit_Sanitaryware_Catalog.pdf" download="Wall_Tiles_Catalog.pdf" class="btn btn-pill-outline btn-sm"><i class="fa-solid fa-download"></i> Download</a>
                     </div>
                 </div>
             </div>

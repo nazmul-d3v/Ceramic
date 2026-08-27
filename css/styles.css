@@ -1668,6 +1668,12 @@ button, input, select, textarea {
     border: 1px solid var(--border-subtle);
 }
 
+.brochure-item.featured-brochure {
+    background: linear-gradient(135deg, rgba(78, 97, 224, 0.25) 0%, rgba(40, 56, 145, 0.35) 100%);
+    border: 1px solid var(--gold);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
 .brochure-item strong {
     color: #FFF;
     display: block;
@@ -1676,6 +1682,98 @@ button, input, select, textarea {
 .brochure-item p {
     font-size: 0.82rem;
     color: var(--text-muted);
+}
+
+/* E-Brochure Showcase Section */
+.e-brochure-section {
+    padding: 60px 0;
+    background: var(--bg-card);
+}
+
+.ebrochure-card {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(14, 20, 36, 0.95) 0%, rgba(26, 38, 70, 0.90) 100%);
+    border: 1px solid var(--gold);
+    border-radius: 20px;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(212, 175, 55, 0.15);
+}
+
+.ebrochure-title {
+    font-size: 2.2rem;
+    font-family: 'Cinzel', serif;
+    color: #FFFFFF;
+    margin: 12px 0 16px 0;
+}
+
+.ebrochure-text {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.ebrochure-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.ebrochure-highlights span {
+    font-size: 0.9rem;
+    color: #E2E8F0;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border-subtle);
+}
+
+.ebrochure-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.ebrochure-preview {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 2px solid var(--border-gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    transform: perspective(800px) rotateY(-6deg);
+    transition: transform 0.4s ease;
+}
+
+.ebrochure-preview:hover {
+    transform: perspective(800px) rotateY(0deg) scale(1.02);
+}
+
+.ebrochure-preview-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ebrochure-badge-float {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(6, 8, 18, 0.9);
+    border: 1px solid var(--gold);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* Toast */

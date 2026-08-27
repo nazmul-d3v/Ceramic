@@ -28,11 +28,12 @@ Experience the live interactive application deployed on Vercel:
 ## ✨ Key Features
 
 - **🌐 Bilingual Support (English & বাংলা)**: Instant dual-language toggle for all text elements across the entire website.
-- **🪄 AR Room Visualizer**: Interactive virtual studio allowing users to preview wall and floor tile choices in real-time across multiple room settings (Living Room, Luxury Bathroom, Kitchen, Commercial Lobby, Outdoor Patio).
-- **🛍️ Dynamic Product Catalog**: Instant search and tabbed filtering for Floor Tiles, Wall Tiles, Homogeneous Tiles, and Double-Charge Vitrified Slabs.
-- **🧮 Smart Tile & Cost Calculator**: Built-in calculator that computes total area (sq ft), number of boxes required, recommended wastage allowance (10%), and estimated total cost.
-- **📍 Showroom Locator**: Interactive showroom finder organized by division (Dhaka, Chittagong, Sylhet, Rajshahi, Mymensingh) complete with contact details, opening hours, and direct Google Maps navigation.
-- **📄 Interactive E-Brochure & Consultation Modal**: Instant download trigger and inquiry modal for custom quote requests.
+- **🚽 Orbit Sanitaryware & Water Closet Collection**: Integrated 16 high-resolution catalog products (Marvello, Lusaro, Arvento, Serenza, Fiorenzo, Cremona, Lucano, and Asiaro sets) with full technical specifications and dimensions.
+- **📄 Direct E-Brochure PDF Download**: Embedded official 16-page `Orbit_Sanitaryware_Catalog.pdf` downloadable directly from the site hero, modal, and dedicated E-Brochure section.
+- **🪄 AR Room Visualizer**: Interactive virtual studio allowing users to preview wall and floor tile choices in real-time across multiple room settings.
+- **🛍️ Dynamic Product Catalog**: Instant search and tabbed filtering for Sanitaryware, Floor Tiles, Wall Tiles, Homogeneous Tiles, and Double-Charge Vitrified Slabs.
+- **🧮 Smart Tile & Cost Calculator**: Built-in calculator computing total area (sq ft/m²), required box count (+10% waste), and total tiles needed.
+- **📍 Showroom Locator**: Interactive showroom finder complete with contact details, opening hours, and direct Google Maps navigation.
 - **💎 Ultra-Premium UI/UX Design**: Built with a sleek dark Royal Blue glassmorphism aesthetic based on the official logo, ambient glow lighting, micro-interactions, responsive navigation, and floating action triggers.
 
 ---
@@ -51,16 +52,18 @@ Experience the live interactive application deployed on Vercel:
 
 ```text
 Ceramic/
-├── index.html          # Main single-page web application
+├── index.html                      # Main single-page web application
+├── Orbit_Sanitaryware_Catalog.pdf  # Downloadable 16-page official PDF catalog
 ├── css/
-│   └── styles.css      # Premium CSS design system & component styles
+│   └── styles.css                  # Premium CSS design system & component styles
 ├── js/
-│   └── app.js          # Interactive application logic & datasets
+│   └── app.js                      # Interactive application logic & datasets
 ├── images/
-│   ├── heeds_logo.png  # Official Heeds Ceramics brand logo
-│   ├── hero.jpg        # Hero section background asset
-│   └── tiles/          # High-resolution product & texture swatches
-└── README.md           # Project documentation
+│   ├── heeds_logo.png              # Official Heeds Ceramics brand logo
+│   ├── hero.jpg                    # Hero section background asset
+│   ├── sanitaryware/               # Rendered HD catalog page screenshots (1-16)
+│   └── tiles/                      # High-resolution product & texture swatches
+└── README.md                       # Project documentation
 ```
 
 ---
