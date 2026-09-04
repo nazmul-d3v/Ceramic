@@ -57,6 +57,7 @@
             <nav class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link active" onclick="setActiveNav(this)" data-en="Home" data-bn="হোম">Home</a>
                 <a href="#about" class="nav-link" onclick="setActiveNav(this)" data-en="About Us" data-bn="আমাদের সম্পর্কে">About Us</a>
+                <a href="#tvc" class="nav-link" onclick="setActiveNav(this)" data-en="Brand TVC" data-bn="আস্থার নতুন সাজ">Brand TVC</a>
                 <a href="#catalog" class="nav-link" onclick="setActiveNav(this)" data-en="Collections" data-bn="কালেকশন">Collections</a>
                 <a href="#visualizer" class="nav-link nav-special" onclick="setActiveNav(this)" data-en="AR Studio" data-bn="এআর স্টুডিও">
                     <i class="fa-solid fa-wand-magic-sparkles spark-icon"></i> <span data-en="AR Studio" data-bn="এআর স্টুডিও">AR Studio</span>
@@ -95,6 +96,7 @@
         <div class="mobile-links">
             <a href="#home" onclick="toggleMobileMenu()"><i class="fa-solid fa-house text-gold"></i> Home</a>
             <a href="#about" onclick="toggleMobileMenu()"><i class="fa-solid fa-building text-gold"></i> About Us</a>
+            <a href="#tvc" onclick="toggleMobileMenu()"><i class="fa-solid fa-film text-gold"></i> Brand TVC (আস্থার নতুন সাজ)</a>
             <a href="#catalog" onclick="toggleMobileMenu()"><i class="fa-solid fa-layer-group text-gold"></i> Tile Collections</a>
             <a href="#visualizer" onclick="toggleMobileMenu()"><i class="fa-solid fa-wand-magic-sparkles text-gold"></i> AR Studio Visualizer</a>
             <a href="#sustainability" onclick="toggleMobileMenu()"><i class="fa-solid fa-microchip text-gold"></i> Italian Tech & Green Plant</a>
@@ -212,6 +214,90 @@
                                 <p data-en="Zero wastewater discharge, heat recovery systems, and eco recycling." data-bn="জিরো ওয়াটার ওয়েস্ট প্রসেসিং ও ইউরোপীয় গ্রীন সলিউশন।">Zero wastewater discharge, heat recovery systems, and eco recycling.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand TVC Showcase Section (আস্থার নতুন সাজ) -->
+    <section class="section tvc-section" id="tvc">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading" data-en="HEEDS CERAMICS BRAND COMMERCIAL" data-bn="হীডস সিরামিকস অফিশিয়াল টিভিসি">HEEDS CERAMICS BRAND COMMERCIAL</span>
+                <h2 class="section-title text-white" data-en="Asthar Notun Saj — Experience Luxury Living" data-bn="আস্থার নতুন সাজ — আপনার স্বপ্নের ঘরের সৌন্দর্য">Asthar Notun Saj — Experience Luxury Living</h2>
+                <div class="gold-line center"></div>
+                <p class="section-subtitle text-light" data-en="Watch our official brand video showcasing elegance, craftsmanship, and modern vitrified tile designs." data-bn="হীডস সিরামিকসের নতুন টিভিসি দেখুন — অভিজাততা, গুণমান ও বিশ্বমানের নকশার মেলবন্ধন।">
+                    Watch our official brand video showcasing elegance, craftsmanship, and modern vitrified tile designs.
+                </p>
+            </div>
+
+            <div class="tvc-grid">
+                <div class="tvc-video-wrapper">
+                    <div class="tvc-video-frame">
+                        <video id="brandTvcVideo" controls preload="metadata" poster="images/hero.jpg" class="tvc-video-player">
+                            <source src="videos/asthar_notun_saj.mp4" type="video/mp4">
+                            <source src="videos/আস্থার_নতুন_সাজ.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="tvc-video-overlay" id="tvcOverlay" onclick="playTvcVideo()">
+                            <button class="tvc-play-btn" aria-label="Play Brand Video">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <span class="tvc-play-label" data-en="Watch Official TVC" data-bn="ভিডিওটি প্লে করুন">Watch Official TVC</span>
+                        </div>
+                        <div class="tvc-badge">
+                            <i class="fa-solid fa-crown text-gold"></i>
+                            <span data-en="Official TVC 2026" data-bn="অফিশিয়াল টিভিসি ২০২৬">Official TVC 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tvc-info-card">
+                    <div class="tvc-tag">
+                        <i class="fa-solid fa-sparkles text-gold"></i>
+                        <span data-en="NEW LOOK OF TRUST" data-bn="আস্থার নতুন রূপ">NEW LOOK OF TRUST</span>
+                    </div>
+                    <h3 class="tvc-heading" data-en="Transforming Homes Across Bangladesh" data-bn="আপনার বাড়িকে সাজিয়ে তুলুন অনন্য সাজে">
+                        Transforming Homes Across Bangladesh
+                    </h3>
+                    <p class="tvc-description" data-en="“আস্থার নতুন সাজ” brings to life Heeds Ceramics' promise of unmatched quality, European craftsmanship, and modern interior aesthetics for every family." data-bn="“আস্থার নতুন সাজ” — হীডস সিরামিকসের প্রতিশ্রুতির নতুন দিগন্ত। উন্নত ইউরোপিয়ান প্রযুক্তি ও নান্দনিক ডিজাইনে প্রতিটি ঘর হয়ে উঠুক স্বপ্নের আলয়।">
+                        “আস্থার নতুন সাজ” brings to life Heeds Ceramics' promise of unmatched quality, European craftsmanship, and modern interior aesthetics for every family.
+                    </p>
+
+                    <div class="tvc-features">
+                        <div class="tvc-feat-item">
+                            <div class="tvc-feat-icon"><i class="fa-solid fa-gem"></i></div>
+                            <div>
+                                <h4 data-en="900+ Premium Vitrified Designs" data-bn="৯০০+ আকর্ষণীয় কালেকশন">900+ Premium Vitrified Designs</h4>
+                                <p data-en="Wall, Floor, Homogeneous & Double Charge tiles." data-bn="ওয়াল, ফ্লোর, হোমোজিনিয়াস ও ডাবল চার্জ টাইলস।">Wall, Floor, Homogeneous & Double Charge tiles.</p>
+                            </div>
+                        </div>
+
+                        <div class="tvc-feat-item">
+                            <div class="tvc-feat-icon"><i class="fa-solid fa-award"></i></div>
+                            <div>
+                                <h4 data-en="Italian SACMI Precision" data-bn="ইতালিয়ান রোবটিক প্রযুক্তি">Italian SACMI Precision</h4>
+                                <p data-en="Continua+ compaction & 8-color HD printing." data-bn="ইতালিয়ান কন্টিনুয়া+ প্রেস ও এইচডি ডিজিটাল প্রিন্টিং।">Continua+ compaction & 8-color HD printing.</p>
+                            </div>
+                        </div>
+
+                        <div class="tvc-feat-item">
+                            <div class="tvc-feat-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+                            <div>
+                                <h4 data-en="Enduring Trust & Elegance" data-bn="নির্ভরযোগ্য স্থায়িত্ব ও সৌন্দর্য">Enduring Trust & Elegance</h4>
+                                <p data-en="Scratch-proof, stain-proof, and high breaking strength." data-bn="স্ক্র্যাচ-প্রুফ, স্টেইন-প্রুফ ও সর্বোচ্চ স্থায়িত্ব।">Scratch-proof, stain-proof, and high breaking strength.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tvc-actions">
+                        <button class="btn btn-pill-gold btn-lg" onclick="playTvcVideo()">
+                            <i class="fa-solid fa-play"></i> <span data-en="Play Video" data-bn="ভিডিও দেখুন">Play Video</span>
+                        </button>
+                        <a href="#catalog" class="btn btn-pill-outline btn-lg">
+                            <i class="fa-solid fa-layer-group text-gold"></i> <span data-en="View Collections" data-bn="ডিজাইনগুলো দেখুন">View Collections</span>
+                        </a>
                     </div>
                 </div>
             </div>

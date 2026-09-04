@@ -471,7 +471,7 @@ function scrollToSection(id) {
 
 function handleContactSubmit(event) {
     event.preventDefault();
-    showToast("Thank you! Your inquiry has been submitted to Akij Ceramics team.");
+    showToast("Thank you! Your inquiry has been submitted to Heeds Ceramics team.");
     event.target.reset();
 }
 
@@ -494,3 +494,29 @@ function showToast(message) {
         toast.style.display = 'none';
     }, 3500);
 }
+
+// 10. BRAND TVC VIDEO CONTROLLER
+function playTvcVideo() {
+    const video = document.getElementById('brandTvcVideo');
+    const overlay = document.getElementById('tvcOverlay');
+    if (!video) return;
+
+    if (video.paused) {
+        video.play().catch(e => console.log('Autoplay prevented:', e));
+        if (overlay) overlay.classList.add('hidden');
+    } else {
+        video.pause();
+        if (overlay) overlay.classList.remove('hidden');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('brandTvcVideo');
+    const overlay = document.getElementById('tvcOverlay');
+    if (video && overlay) {
+        video.addEventListener('play', () => overlay.classList.add('hidden'));
+        video.addEventListener('pause', () => overlay.classList.remove('hidden'));
+        video.addEventListener('ended', () => overlay.classList.remove('hidden'));
+    }
+});
+
